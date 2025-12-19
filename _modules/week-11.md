@@ -16,7 +16,6 @@ days:
         type: lab
         title: "Gradient Descent and Convexity"
         problems: resources/labs/lab10/lab10.pdf
-        solutions: resources/labs/lab10/lab10-solutions.pdf
   - date: "2025-11-06"
     events:
       - name: LEC 20
@@ -35,7 +34,4 @@ days:
       - name: HW 9
         type: hw
         title: <b>Gradients and Gradient Descent</b>
-        problems: resources/homeworks/hw09/hw09.pdf
-        template: https://www.overleaf.com/read/jbbfxkzvxvvn#6a1b96
-        solutions: https://edstem.org/us/courses/81392/discussion/7286537
 ---

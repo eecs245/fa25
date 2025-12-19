@@ -17,7 +17,6 @@ days:
         type: lab
         title: "Feature Engineering; The Gradient Vector"
         problems: resources/labs/lab09/lab09.pdf
-        solutions: resources/labs/lab09/lab09-solutions.pdf
   - date: "2025-10-30"
     events:
       - name: LEC 18
@@ -32,7 +31,4 @@ days:
       - name: HW 8
         type: hw
         title: <b>Multiple Linear Regression</b>
-        problems: resources/homeworks/hw08/hw08.pdf
-        template: https://www.overleaf.com/read/xdprtysknycg#e13ed6
-        solutions: https://edstem.org/us/courses/81392/discussion/7250216
 ---

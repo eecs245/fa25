@@ -19,14 +19,10 @@ days:
         datahub_text: Lab 2
         datahub_link: https://datahub.eecs245.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Feecs245%2Ffa25&urlpath=tree%2Ffa25%2Flabs%2Flab02%2Flab02.ipynb&branch=main
         github_link: https://github.com/eecs245/fa25/tree/main/labs/lab02/lab02.ipynb
-        solutions: resources/labs/lab02/lab02-solutions.pdf
         problems: resources/labs/lab02/lab02.pdf
       - name: HW 1
         type: hw
         title: "<b>Means, Sums, and Calculus</b>"
-        problems: resources/homeworks/hw01/hw01.pdf
-        solutions: https://edstem.org/us/courses/81392/discussion/6921732
-        template: https://www.overleaf.com/read/fgmjgvmdypjg#c81775
         video: https://www.loom.com/share/4f02c4ba618846b79841d1bc01982d46?sid=e9d76743-c5a5-413c-83f3-7471db9d13d6
         video_text: "Template Instructions"
       - name: SUR

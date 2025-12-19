@@ -20,7 +20,6 @@ days:
         datahub_link: https://datahub.eecs245.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Feecs245%2Ffa25&urlpath=tree%2Ffa25%2Flabs%2Flab06%2Flab06.ipynb&branch=main
         github_link: https://github.com/eecs245/fa25/tree/main/labs/lab06/lab06.ipynb
         problems: resources/labs/lab06/lab06.pdf
-        solutions: resources/labs/lab06/lab06-solutions.pdf
   - date: "2025-10-09"
     events:
       - name: LEC 13
@@ -33,7 +32,4 @@ days:
       - name: HW 5
         type: hw
         title: <b>Matrices</b>
-        problems: resources/homeworks/hw05/hw05.pdf
-        solutions: https://edstem.org/us/courses/81392/discussion/7132310
-        template: https://www.overleaf.com/read/nxrfgvtzjdtc#3dfe13
 ---

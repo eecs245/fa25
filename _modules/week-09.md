@@ -7,9 +7,6 @@ days:
       - name: HW 6
         type: hw
         title: <b>Rank and Inverses (note the extended deadline!)</b>
-        problems: resources/homeworks/hw06/hw06.pdf
-        template: https://www.overleaf.com/read/fhzfzrycpgsf#c1123b
-        solutions: https://edstem.org/us/courses/81392/discussion/7187702
   - date: "2025-10-21"
     events:
       - name: LEC 15
@@ -43,7 +40,4 @@ days:
       - name: HW 7
         type: hw
         title: <b>Projections; Regression using Linear Algebra</b>
-        problems: resources/homeworks/hw07/hw07.pdf
-        template: https://www.overleaf.com/read/gngrpzddbdhn#eacac9
-        solutions: https://edstem.org/us/courses/81392/discussion/7208733
 ---

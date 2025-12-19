@@ -19,7 +19,6 @@ days:
         type: lab
         title: "Diagonalization"
         problems: resources/labs/lab11/lab11.pdf
-        solutions: resources/labs/lab11/lab11-solutions.pdf
   - date: "2025-11-20"
     events:
       - name: LEC 23

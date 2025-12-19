@@ -18,7 +18,6 @@ days:
         type: lab
         title: Python Basics and Math Review
         problems: resources/labs/lab01/lab01.pdf
-        solutions: resources/labs/lab01/lab01-solutions.pdf
         reading: https://notes.eecs245.org/prelim/summation/
         reading_text: "Ch. 0.1"
         reading2: https://notes.eecs245.org/prelim/derivatives/

@@ -16,9 +16,6 @@ days:
       - name: HW 2
         type: hw
         title: <b>Empirical Risk and Simple Linear Regression</b>
-        problems: resources/homeworks/hw02/hw02.pdf
-        solutions: https://edstem.org/us/courses/81392/discussion/6950862
-        template: https://www.overleaf.com/read/rkctpjvbfzjd#74af82
         note: Watch <b><a href="https://edstem.org/us/courses/81392/discussion/6920064">this video</a></b> for hints on Problem 2a.
   - date: "2025-09-10"
     events:
@@ -26,7 +23,6 @@ days:
         type: lab
         title: "Vectors and the Dot Product"
         problems: resources/labs/lab03/lab03.pdf
-        solutions: resources/labs/lab03/lab03-solutions.pdf
   - date: "2025-09-11"
     events:
       - name: LEC 6

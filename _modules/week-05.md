@@ -19,7 +19,6 @@ days:
         type: lab
         title: "Vector Spaces, Subspaces, and Bases"
         problems: resources/labs/lab05/lab05.pdf
-        solutions: resources/labs/lab05/lab05-solutions.pdf
   - date: "2025-09-25"
     events:
       - name: LEC 10
@@ -40,7 +39,4 @@ days:
       - name: HW 4
         type: hw
         title: <b>Projections, Spans, and Linear Independence</b>
-        problems: resources/homeworks/hw04/hw04.pdf
-        template: https://www.overleaf.com/read/ftzzxbbwwmkv#ed0e65
-        solutions: https://edstem.org/us/courses/81392/discussion/7040264
 ---
