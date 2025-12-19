@@ -1,0 +1,146 @@
+<div class="module">
+  <h3 class="module-header" id="{{ page.title | slugify }}">{{ page.title }}</h3>
+  {% if page.days %}
+  <dl class="module-days">
+    {% for day in page.days %}
+      <dt class="module-day main">{{ day.date | date: '%a %b %e' }}</dt>
+      {% for event in day.events %}
+        {% if event.markdown_content %}
+          <dd class="module-event{% if forloop.first %} main{% endif %}">
+            {{ event.markdown_content | markdownify }}
+          </dd>
+        {% else %}
+          <dd class="module-event{% if forloop.first %} main{% endif %}">
+            <p>
+              {% if event.type %}
+              <strong class="label label-{{ event.type }}">
+                {{ event.name }}
+              </strong>
+              {% endif %}
+              {% if event.url %}
+                <a href="{{ event.url }}">{{ event.title }}</a>
+              {% else %}
+                {{ event.title }}
+              {% endif %}
+            </p>
+            <div class="event-links">
+                {%- if event.type == "lecture" or event.type == "review" or event.type == "lab" or event.type == "exam" or event.type == "hw" -%}
+                {%- if event.problems -%}
+                <a href="{{ event.problems }}" class="btn btn-info btn-sm">🧠 Problems</a>
+                {%- endif -%}
+                {%- if event.solutions -%}
+                <a href="{{ event.solutions }}" class="btn btn-info btn-sm">✅ Solutions</a>
+                {%- endif -%}
+                {%- if event.template -%}
+                <a href="{{ event.template }}" class="btn btn-info btn-sm">🍃 LaTeX Template</a>
+                {%- endif -%}
+                {%- if event.video -%}
+                <a href="{{ event.video }}" class="btn btn-info btn-sm">🎥 {{ event.video_text }}</a>
+                {%- endif -%}
+                {%- if event.datahub_link or event.github_link -%}<button class="btn btn-info btn-sm expandable-code-btn" onclick="toggleCodeLinks(this)" data-event-id="{{ page.weekNumber }}-{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}">💻 {% if event.code_button_text %}{{ event.code_button_text }}{% else %}Code{% endif %} ▼</button>{%- endif -%}
+                {%- if event.reading and event.reading_text -%}
+                <a href="{{ event.reading }}" class="btn btn-info btn-sm">📕 {{ event.reading_text }}</a>
+                {%- endif -%}
+                {%- if event.reading2 and event.reading2_text -%}
+                <a href="{{ event.reading2 }}" class="btn btn-info btn-sm">📕 {{ event.reading2_text }}</a>
+                {%- endif -%}
+                {%- if event.reading3 and event.reading3_text -%}
+                <a href="{{ event.reading3 }}" class="btn btn-info btn-sm">📕 {{ event.reading3_text }}</a>
+                {%- endif -%}
+                {%- if event.live_notes -%}
+                <small><a href="{{ event.live_notes }}" class="btn btn-info btn-sm">📝 In-Class Notes</a></small>
+                {%- endif -%}
+                {%- if event.html -%}
+                <a href="{{ event.html }}" class="btn btn-info btn-sm">📝 filled html</a>
+                {%- endif -%}
+                {%- if event.extra -%}
+                <a href="{{ event.extra }}" class="btn btn-info btn-sm">🎁 {{ event.extra_text }}</a>
+                {%- endif -%}
+                {%- if event.annotations -%}
+                <a href="{{ event.annotations }}" class="btn btn-info btn-sm">✍️ annotations</a>
+                {%- endif -%}
+                {%- if event.github -%}
+                <a href="{{ event.github }}" class="btn btn-info btn-sm">{% include icon-github.html %} GitHub</a>
+                {%- endif -%}
+                {%- if event.recording -%}
+                <a href="{{ event.recording }}" class="btn btn-info btn-sm">📺 Recording</a>
+                {%- endif -%}
+                {%- if event.guide -%}
+                <small><a href="{{ event.guide }}" class="btn btn-info btn-sm">🧑‍🤝‍🧑 Guides: {{ event.guide_title }}</a></small>
+                {%- endif -%}
+                {%- if event.animations -%}
+                <a href="{{ event.animations }}" class="btn btn-info btn-sm">🧮 Animations</a>
+                {%- endif -%}
+                {%- if event.videos -%}
+                <a href="{{ event.videos }}" class="btn btn-info btn-sm">⏯️ Videos</a>
+                {%- endif -%}
+              {%- endif -%}
+              <!-- {%- if event.type == "hw" or event.type == "disc" -%}
+                {%- if event.slides -%}
+                <small><a href="{{ event.slides }}" class="btn btn-info btn-sm">🧑‍🏫 mini-lecture slides</a></small>
+                {%- endif -%}
+                {%- if event.problems -%}
+                <a href="{{ event.problems }}" class="btn btn-info btn-sm">🧠 worksheet</a>
+                {%- endif -%}
+                {%- if event.description -%}
+                <a href="{{ event.description }}" class="btn btn-info btn-sm">📄 description</a>
+                {%- endif -%}
+                {%- if event.gradescope -%}
+                <a href="{{ event.gradescope }}" class="btn btn-info btn-sm">✅ submission</a>
+                {%- endif -%}
+                {%- if event.github -%}
+                <a href="{{ event.github }}" class="btn btn-info btn-sm">{% include icon-github.html %} GitHub</a>
+                {%- endif -%}
+                {%- if event.reading and event.reading_text -%}
+                <a href="{{ event.reading }}" class="btn btn-info btn-sm">📕 Read: {{ event.reading_text }}</a>
+                {%- endif -%}
+                {%- if event.walkthrough -%}
+                <a href="{{ event.walkthrough }}" class="btn btn-info btn-sm">🎥 walkthrough</a>
+                {%- endif -%}
+                {%- if event.solutions -%}
+                <a href="{{ event.solutions }}" class="btn btn-info btn-sm">📝 solutions</a>
+                {%- endif -%}
+              {%- endif -%} -->
+              {%- if event.datahub_link or event.github_link -%}
+              <div class="code-links-expanded" id="code-links-{{ page.weekNumber }}-{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}" style="display: none;">
+                {%- if event.datahub_link -%}
+                <small><a href="{{ event.datahub_link }}">🚀 Launch {{ event.datahub_text }} on DataHub</a>, or </small>
+                {%- endif -%}
+                {%- if event.github_link -%}
+                <small> clone our <a href="{{ event.github_link }}">{% include icon-github.html %} GitHub repository</a>.</small>
+                {%- endif -%}
+              </div>
+              {%- endif -%}
+              {%- if event.note -%}
+              <br><p><small>{{ event.note }}</small></p>
+              {%- endif -%}
+            </div>
+          </dd>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </dl>
+  {% endif %}
+  {% assign content_strip = content | strip %}
+  {% if content_strip != "" %}
+  <div class="module-body">
+    <small>{{ content }}</small>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+function toggleCodeLinks(button) {
+  const eventId = button.getAttribute('data-event-id');
+  const expandedDiv = document.getElementById('code-links-' + eventId);
+  const isExpanded = expandedDiv.style.display !== 'none';
+  
+  if (isExpanded) {
+    expandedDiv.style.display = 'none';
+    button.innerHTML = button.innerHTML.replace('▲', '▼');
+  } else {
+    expandedDiv.style.display = 'block';
+    button.innerHTML = button.innerHTML.replace('▼', '▲');
+  }
+}
+</script>
