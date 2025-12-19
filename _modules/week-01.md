@@ -10,15 +10,15 @@ days:
         # note: "Course notes are actively being developed, and will be linked under each lecture once they are available."
         reading: https://notes.eecs245.org/supervised-learning/intro/
         reading_text: "Ch. 1.1"
-        live_notes: ../resources/lecture-pdfs/lec01.pdf
+        live_notes: resources/lecture-pdfs/lec01.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/2qU6vQ
   - date: "2025-08-27"
     events:
       - name: LAB 1
         type: lab
         title: Python Basics and Math Review
-        problems: ../resources/labs/lab01/lab01.pdf
-        solutions: ../resources/labs/lab01/lab01-solutions.pdf
+        problems: resources/labs/lab01/lab01.pdf
+        solutions: resources/labs/lab01/lab01-solutions.pdf
         reading: https://notes.eecs245.org/prelim/summation/
         reading_text: "Ch. 0.1"
         reading2: https://notes.eecs245.org/prelim/derivatives/
@@ -36,6 +36,6 @@ days:
         reading_text: "Ch. 1.2"
         reading2: https://notes.eecs245.org/supervised-learning/empirical-risk-minimization/
         reading2_text: "Ch. 1.3"
-        live_notes: ../resources/lecture-pdfs/lec02.pdf
+        live_notes: resources/lecture-pdfs/lec02.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/tJoqmv
 ---

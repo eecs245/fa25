@@ -7,8 +7,8 @@ days:
       - name: EXAM
         type: exam
         title: <b>Midterm 1 (during lecture)</b>
-        problems: ../resources/exams/fa25-mt1.pdf
-        solutions: ../resources/exams/fa25-mt1-solutions.pdf
+        problems: resources/exams/fa25-mt1.pdf
+        solutions: resources/exams/fa25-mt1-solutions.pdf
   - date: "2025-10-01"
     events:
       - title: "No Lab: Day after Midterm"
@@ -19,6 +19,6 @@ days:
         title: Matrices
         reading: https://notes.eecs245.org/vectors-and-matrices/matrices/
         reading_text: Ch. 2.7
-        live_notes: ../resources/lecture-pdfs/lec11.pdf
+        live_notes: resources/lecture-pdfs/lec11.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/i6se6e
 ---

@@ -7,8 +7,8 @@ days:
       - name: EXAM
         type: exam
         title: <b>Midterm 2 (during lecture)</b>
-        problems: ../resources/exams/fa25-mt2.pdf
-        solutions: ../resources/exams/fa25-mt2-solutions.pdf
+        problems: resources/exams/fa25-mt2.pdf
+        solutions: resources/exams/fa25-mt2-solutions.pdf
   - date: "2025-11-12"
     events:
       - title: "No Lab: Day after Midterm"
@@ -19,6 +19,6 @@ days:
         title: Eigenvalues and Eigenvectors, Continued
         reading: https://notes.eecs245.org/eigenvalues/intro/
         reading_text: Ch. 5.1
-        live_notes: ../resources/lecture-pdfs/lec21.pdf
+        live_notes: resources/lecture-pdfs/lec21.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/3Bissu
 ---

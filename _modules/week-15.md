@@ -9,7 +9,7 @@ days:
         title: Principal Components Analysis
         reading: https://notes.eecs245.org/eigenvalues/principal-components-analysis/
         reading_text: Ch. 5.4
-        live_notes: ../resources/lecture-pdfs/lec25.pdf
+        live_notes: resources/lecture-pdfs/lec25.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/kPZKrf
   - date: "2025-12-03"
     events:
@@ -23,7 +23,7 @@ days:
         title: Principal Components Analysis, Continued
         reading: https://notes.eecs245.org/eigenvalues/principal-components-analysis/
         reading_text: Ch. 5.4
-        live_notes: ../resources/lecture-pdfs/lec26.pdf
+        live_notes: resources/lecture-pdfs/lec26.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/0cBuh9
   - date: "2025-12-06"
     events:

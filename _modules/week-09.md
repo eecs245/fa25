@@ -7,7 +7,7 @@ days:
       - name: HW 6
         type: hw
         title: <b>Rank and Inverses (note the extended deadline!)</b>
-        problems: ../resources/homeworks/hw06/hw06.pdf
+        problems: resources/homeworks/hw06/hw06.pdf
         template: https://www.overleaf.com/read/fhzfzrycpgsf#c1123b
         solutions: https://edstem.org/us/courses/81392/discussion/7187702
   - date: "2025-10-21"
@@ -19,7 +19,7 @@ days:
         reading_text: Ch. 2.10 (many new examples!)
         reading2: https://notes.eecs245.org/multiple-linear-regression/regression-using-linear-algebra/
         reading2_text: Ch. 3.1
-        live_notes: ../resources/lecture-pdfs/lec15.pdf
+        live_notes: resources/lecture-pdfs/lec15.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/nbpgx5
   - date: "2025-10-22"
     events:
@@ -36,14 +36,14 @@ days:
         reading_text: Ch. 3.1
         reading2: https://notes.eecs245.org/multiple-linear-regression/multiple-linear-regression/
         reading2_text: Ch. 3.2
-        live_notes: ../resources/lecture-pdfs/lec16.pdf
+        live_notes: resources/lecture-pdfs/lec16.pdf
         recording: https://leccap.engin.umich.edu/leccap/player/r/xop6jJ
   - date: "2025-10-24"
     events:
       - name: HW 7
         type: hw
         title: <b>Projections; Regression using Linear Algebra</b>
-        problems: ../resources/homeworks/hw07/hw07.pdf
+        problems: resources/homeworks/hw07/hw07.pdf
         template: https://www.overleaf.com/read/gngrpzddbdhn#eacac9
         solutions: https://edstem.org/us/courses/81392/discussion/7208733
 ---

@@ -7,7 +7,7 @@ days:
       - name: HW 11
         type: hw
         title: <b>Singular Value Decomposition (no slip days!)</b>
-        problems: ../resources/homeworks/hw11/hw11.pdf
+        problems: resources/homeworks/hw11/hw11.pdf
         template: https://www.overleaf.com/read/sqzfjngzwbkw#577e21
         solutions: https://edstem.org/us/courses/81392/discussion/7431284
   - date: "2025-12-09"
@@ -22,5 +22,5 @@ days:
         type: exam
         title: <b>Final Exam (10:30AM-12:30PM, 1013 DOW)</b>
         note: Make sure to read the <a href="">Logistics</a> post on Ed for details on how to prepare.
-        problems: ../resources/exams/fa25-final.pdf
+        problems: resources/exams/fa25-final.pdf
 ---
